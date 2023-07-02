@@ -2,29 +2,17 @@ package main
 
 import "fmt"
 
-// STORY:
-// You want to compare two bookcases,
-// whether they're equal or not.
-
 func main() {
-	// When comparing two arrays, their types should be identical
-
-	// Comment out one of the following pair of variables and observe the results.
-
 	var (
-		// equal (types + elements are identical)::
 		blue = [3]int{6, 9, 3}
 		red  = [3]int{6, 9, 3}
 
-		// equal (types + elements are identical):
 		// blue = [...]int{6, 9, 3}
 		// red  = [3]int{6, 9, 3}
 
-		// not equal (element ordering are different):
 		// blue = [3]int{6, 9, 3}
 		// red  = [3]int{3, 9, 6}
 
-		// not equal (the last elements are not equal):
 		// blue = [3]int{6, 9}
 		// red  = [3]int{6, 9, 3}
 

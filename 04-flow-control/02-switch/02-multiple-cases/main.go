@@ -2,20 +2,18 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
-	city := os.Args[1]
+	city := "Paris"
 
 	switch city {
 	case "Paris":
 		fmt.Println("France")
 		// break // unnecessary in Go
 
-		// vip := true
-		// fmt.Println("VIP trip?", vip)
-
+		vip := true
+		fmt.Println("VIP trip?", vip)
 	case "Tokyo":
 		fmt.Println("Japan")
 		// fmt.Println("VIP trip?", vip)

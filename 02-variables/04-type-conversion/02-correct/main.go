@@ -8,9 +8,9 @@ func main() {
 	speed := 100
 	force := 2.5
 
-	fmt.Printf("speed     : %T\n", speed)
-	fmt.Printf("conversion: %T\n", float64(speed))
-	fmt.Printf("expression: %T\n", float64(speed)*force)
+	fmt.Printf("speed     : %d\n", speed)
+	fmt.Printf("conversion: %f\n", float64(speed))
+	fmt.Printf("expression: %f\n", float64(speed)*force)
 
 	// TYPE MISMATCH:
 	//   speed is int

@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
-	city := os.Args[1]
+	city := "Lyon"
 
 	switch city {
 	case "Paris", "Lyon":

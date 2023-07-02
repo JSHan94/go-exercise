@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	n, err := strconv.Atoi("42")
+	n, err := strconv.Atoi("hello")
 
 	if err == nil {
 		fmt.Println("There was no error, n is", n)

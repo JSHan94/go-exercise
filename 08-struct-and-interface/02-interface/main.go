@@ -10,9 +10,6 @@ func main() {
 		rubik     = puzzle{title: "rubik's cube", price: 5}
 	)
 
-	// thanks to the printer interface we can add different types of values
-	// to the list.
-	//
 	// only rule: they need to implement the `printer` interface.
 	// to do that: each type needs to have a print method.
 

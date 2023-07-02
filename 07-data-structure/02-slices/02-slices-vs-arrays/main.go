@@ -3,29 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	var array [2]int
+	{
+		// its length is part of its type
+		var nums [5]int
+		fmt.Printf("nums array: %#v\n", nums)
+		// fmt.Printf("nums[0]: %d\n", nums[0])
+		// fmt.Printf("nums[1]: %d\n", nums[1])
+	}
 
-	// zero value of an array is zero-valued elements
-	fmt.Printf("array       : %#v\n", array)
+	{
+		// its length is not part of its type
+		var nums []int
+		fmt.Printf("nums slice: %#v\n", nums)
 
-	// nope: arrays are fixed length
-	// array[2] = 0
+		fmt.Printf("len(nums) : %d\n", len(nums))
 
-	var slice []int
-
-	// zero value of a slice is nil
-	fmt.Println("slice == nil?", slice == nil)
-
-	// nope: they don't exist:
-	// _ = slice[0]
-	// _ = slice[1]
-
-	// len function still works though
-	fmt.Println("len(slice)  :", len(slice))
-
-	// array's length is part of its type
-	fmt.Printf("array's type: %T\n", array)
-
-	// whereas, slice's length isn't part of its type
-	fmt.Printf("slice's type: %T\n", slice)
+		// won't work: the slice is nil.
+		// fmt.Printf("nums[0]: %d\n", nums[0])
+		// fmt.Printf("nums[1]: %d\n", nums[1])
+	}
 }

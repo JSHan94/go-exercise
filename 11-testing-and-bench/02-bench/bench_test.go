@@ -8,6 +8,7 @@ import (
 )
 
 func calculateSquareRoot(x float64) float64 {
+	// time.Sleep(100 * time.Millisecond)
 	return math.Sqrt(x)
 }
 

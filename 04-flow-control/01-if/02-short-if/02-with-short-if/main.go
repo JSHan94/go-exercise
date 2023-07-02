@@ -9,6 +9,7 @@ func main() {
 	if n, err := strconv.Atoi("42"); err == nil {
 		// n and err are available here
 		fmt.Println("There was no error, n is", n)
+		fmt.Println(n, err)
 	}
 
 	// n and err are not available here

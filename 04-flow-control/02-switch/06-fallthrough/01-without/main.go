@@ -7,9 +7,9 @@ func main() {
 
 	switch {
 	case i > 100:
-		fmt.Print("big positive number")
+		fmt.Println("big positive number")
 	case i > 0:
-		fmt.Print("positive number")
+		fmt.Println("positive number")
 	default:
 		fmt.Print("number")
 	}
